@@ -1,0 +1,36 @@
+{
+  "name": "retrospect-server-agent",
+  "version": "1.0.0",
+  "description": "\"Node auto instrumentation agent with custom baggage middleware\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Team-Retrospect/retrospect-server-agent.git"
+  },
+  "keywords": [
+    "instrumentation",
+    "middleware",
+    "agent"
+  ],
+  "dependencies": {
+    "@opentelemetry/api": "^0.21.0",
+    "@opentelemetry/core": "^0.21.0",
+    "@opentelemetry/exporter-zipkin": "^0.21.0",
+    "@opentelemetry/instrumentation-grpc": "^0.21.0",
+    "@opentelemetry/instrumentation-http": "^0.21.0",
+    "@opentelemetry/instrumentation-mongodb": "^0.21.0",
+    "@opentelemetry/instrumentation-redis": "^0.21.0",
+    "@opentelemetry/node": "^0.21.0",
+    "@opentelemetry/semantic-conventions": "^0.23.0",
+    "@opentelemetry/tracing": "^0.21.0"
+  },
+  "author": "Retrospect",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Team-Retrospect/retrospect-server-agent/issues"
+  },
+  "homepage": "https://github.com/Team-Retrospect/retrospect-server-agent#readme"
+}

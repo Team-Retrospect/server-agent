@@ -19,7 +19,7 @@ $ npm install retrospect-server-agent
 1.  Import this package into the main file that handles your service startup with the following:
 
     ```js
-    const customBaggage = require("[our package name]");
+    const customBaggage = require("retrospect-server-agent");
     ```
 
 2.  Load this package as middleware:
@@ -28,7 +28,7 @@ $ npm install retrospect-server-agent
     app.use(customBaggage);
     ```
 
-    - Important Note: You may load this middleware after loading `app.use(cors()` and `app.use(express.json())` middleware but it must be before laoding your application routes.
+    - Important Note: You may load this middleware after loading `app.use(cors())` but it must be loaded before your application routes.
 
     - Example:
 
@@ -37,7 +37,7 @@ $ npm install retrospect-server-agent
       const express = require("express");
       const app = express();
 
-      const customBaggage = require("[add our package name here]");
+      const customBaggage = require("retrospect-server-agent");
 
       app.use(cors());
 
@@ -54,11 +54,11 @@ $ npm install retrospect-server-agent
 
       <br>
 
-3.  Edit the `config.json` file inside `[add package name here]` package folder in `node_modules`.
+3.  Edit the `config.json` file inside `retrospect-server-agent` package folder in `node_modules`.
 
     ### Configuration Options
 
-    - `serviceName`: adds the name of your service to tracing data.
+    - `serviceName`: adds the name of your service that this package is tracing.
 
     - `rootEntryPoint`:
 
@@ -100,7 +100,7 @@ $ npm install retrospect-server-agent
 
     <br>
 
-    ### Example of `config.js` using docker locally
+    ### Example of `config.js` using an endpoint in docker locally
 
     ```json
     {
