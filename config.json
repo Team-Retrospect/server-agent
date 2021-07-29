@@ -1,9 +1,8 @@
 {
-  "serviceName": "your-server-name", 
-  "rootEntryPoint": "index.js",
+  "serviceName": "your-service-name",
   "dbOptions": {
     "mongodb": false, 
     "redis": false
   },
-  "endpoint": "https://example.com:80"
+  "endpoint": "http://localhost"
 }
