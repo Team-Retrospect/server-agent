@@ -105,7 +105,6 @@ $ npm install retrospect-server-agent
     ```json
     {
       "serviceName": "payment-service",
-      "rootEntryPoint": "index.js",
       "dbOptions": {
         "mongodb": true,
         "redis": false
@@ -116,12 +115,12 @@ $ npm install retrospect-server-agent
 
     <br>
 
-4.  Update the `trace` script in your service `package.json` file by appending the name of your service startup file.
+4.  Update the `start` script in your service `package.json` file by appending the name of your service startup file.
 
         ```json
-          "trace": "node -r textrix-server/tracing.js nameOfYourStartupFile.js"
+          "start": "node -r retrospect-server-agent/tracing.js nameOfYourStartupFile.js"
         ```
 
     <br>
 
-5.  Start your application by calling the `trace` script.
+5.  Start your application by calling the `start` script.
