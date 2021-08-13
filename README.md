@@ -19,9 +19,9 @@ $ npm install retrospect-server-agent
 
 1.  Import this package into the main file that handles your service startup with the following:
 
-        ```js
+       ```js
         const customBaggage = require("retrospect-server-agent");
-        ```
+       ```
 
     <br>
 
@@ -117,9 +117,9 @@ $ npm install retrospect-server-agent
 
 4.  Update the `start` script in your service `package.json` file by appending the name of your service startup file.
 
-        ```json
+       ```json
           "start": "node -r retrospect-server-agent/tracing.js nameOfYourStartupFile.js"
-        ```
+       ```
 
     <br>
 
