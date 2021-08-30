@@ -85,7 +85,7 @@ $ npm install retrospect-server-agent
 
       <br>
 
-    ### Example of `config.js` using a domain as a endpoint
+    ### Example of `config.js` using a domain as an endpoint
 
     ```json
     {
